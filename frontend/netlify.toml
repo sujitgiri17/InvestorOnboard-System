@@ -1,0 +1,10 @@
+[build]
+base = "frontend"
+publish = "frontend/build"
+command = "npm run build"
+functions = "frontend/src/netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
